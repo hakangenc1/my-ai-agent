@@ -33,7 +33,7 @@ export function UpgradeView() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 container mx-auto mt-5">
       {/* Header Section */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -104,7 +104,7 @@ export function UpgradeView() {
           <div className="space-y-2">
             <h3 className="font-medium">What happens if I exceed my limits?</h3>
             <p className="text-sm text-muted-foreground">
-              You'll be notified when approaching your limits and can upgrade
+              You will be notified when approaching your limits and can upgrade
               your plan to continue using the service without interruption.
             </p>
           </div>
