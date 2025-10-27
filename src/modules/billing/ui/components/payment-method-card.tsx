@@ -30,7 +30,7 @@ export const PaymentMethodCard = ({
     return `${month.toString().padStart(2, "0")}/${year.toString().slice(-2)}`;
   };
 
-  const getPaymentMethodIcon = (type: PaymentMethod["type"]) => {
+  const getPaymentMethodIcon = () => {
     return <CreditCard className="size-5" />;
   };
 
@@ -76,7 +76,7 @@ export const PaymentMethodCard = ({
               >
                 <div className="flex items-center gap-3">
                   <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
-                    {getPaymentMethodIcon(method.type)}
+                    {getPaymentMethodIcon()}
                   </div>
                   <div className="flex-1 space-y-1">
                     <p className="text-sm font-medium">
