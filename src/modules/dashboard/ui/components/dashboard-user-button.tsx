@@ -21,6 +21,7 @@ import {
 import { useIsMobile } from "@/hooks/use-mobile";
 import { authClient } from "@/lib/auth-client";
 import { ChevronDownIcon, CreditCardIcon, LogOutIcon } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export const DashboardUserButton = () => {
@@ -112,10 +113,12 @@ export const DashboardUserButton = () => {
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="cursor-pointer flex items-center justify-between">
-          Billing
-          <CreditCardIcon className="size-4" />
-        </DropdownMenuItem>
+        <Link href="/billing">
+          <DropdownMenuItem className="cursor-pointer flex items-center justify-between">
+            Billing
+            <CreditCardIcon className="size-4" />
+          </DropdownMenuItem>
+        </Link>
         <DropdownMenuItem
           onClick={onLogout}
           className="cursor-pointer flex items-center justify-between"
